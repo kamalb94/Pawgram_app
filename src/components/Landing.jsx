@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import Seo from './Seo';
 
 export default function PawgramLanding() {
   useEffect(() => {
@@ -10,6 +11,11 @@ export default function PawgramLanding() {
   
 
   return (
+    <>
+    <Seo
+  title="Pawgram - Connect, Care, Share"
+  description="Pawgram is your go-to platform to discover dog breeds, connect with NGOs, share pet stories, and help stray dogs."
+/>
     <main className="min-h-screen bg-primary-light dark:bg-background-dark p-4 md:p-12 font-sans transition-colors duration-500 ">
       <section className="text-center max-w-5xl mx-auto mt-32">
         <motion.h1
@@ -149,5 +155,6 @@ export default function PawgramLanding() {
         <p className="text-sm">&copy; 2025 Pawgram. Built with ❤️ to unite dogs with their forever families.</p>
       </footer>
     </main>
+    </>
   );
 }
